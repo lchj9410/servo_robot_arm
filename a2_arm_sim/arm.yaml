@@ -1,0 +1,38 @@
+
+  joint_state_controller:
+    type: "joint_state_controller/JointStateController"
+    publish_rate: 1000 
+
+  turn_controller:
+    type: "velocity_controllers/JointPositionController"
+    joint: turn
+    pid: {p: 1000, i: 100, d: 1}
+
+  shoulder_controller:
+    type: "velocity_controllers/JointPositionController"
+    joint: shoulder
+    pid: {p: 2000, i: 500, d: 1}
+
+  elbow_controller:
+    type: "velocity_controllers/JointPositionController"
+    joint: elbow
+    pid: {p: 1000, i: 100, d: 1}
+
+  wristx_controller:
+    type: "velocity_controllers/JointPositionController"
+    joint: wristx
+    pid: {p: 1000, i: 100, d: 1}
+
+  wristy_controller:
+    type: "velocity_controllers/JointPositionController"
+    joint: wristy
+    pid: {p: 1000, i: 100, d: 1}
+
+  wristz_controller:
+    type: "velocity_controllers/JointPositionController"
+    joint: wristz
+    pid: {p: 1000, i: 100, d: 1}
+
+
+
+
